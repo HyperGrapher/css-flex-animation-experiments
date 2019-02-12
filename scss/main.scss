@@ -1,0 +1,70 @@
+@import 'reset';
+@import 'mixins';
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+body {
+	height: 100vh;
+	background: rgb(31, 28, 25);
+
+}
+
+#navbar {
+	width: 100%;
+	height: 70px;
+	box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+
+
+	ul {
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		flex-flow: row nowrap;
+		max-height: 70px;
+		max-width: 920px;
+		margin: 0 auto;
+		background: rgba(0, 0, 0, 0.973);
+
+
+		
+
+	}
+
+	ul li {
+		display: inline;
+		overflow: hidden;
+		display: inline-block;
+		transition: all 1s cubic-bezier(.27, .51, .44, .99);
+		flex-basis: 100%;
+
+		&:hover{
+			flex-basis: 120%;
+			background: rgba(0, 0, 0, 0.233);
+
+		}
+
+
+	}
+
+	ul li a {
+
+		font-family: Lato, sans-serif;
+		letter-spacing: 2px;
+		font-weight: 400;
+		font-size: 1em;
+		text-decoration: none;
+		color: rgb(129, 127, 127);
+		line-height: 70px;
+		transition: color 1s cubic-bezier(.27, .51, .44, .99);
+		display: block;
+		text-align: center;
+
+
+		&:hover {
+			color: rgb(255, 255, 255);
+
+		}
+	}
+}
+
+

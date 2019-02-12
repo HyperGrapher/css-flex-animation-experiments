@@ -1,0 +1,103 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+/* CSS Micro Reset */
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th, td {
+  text-align: left;
+  vertical-align: top;
+}
+
+img, iframe {
+  border: 0;
+}
+
+/* CSS Micro Reset */
+body {
+  height: 100vh;
+  background: #1f1c19;
+}
+
+#navbar {
+  width: 100%;
+  height: 70px;
+  -webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+}
+
+#navbar ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  max-height: 70px;
+  max-width: 920px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.973);
+}
+
+#navbar ul li {
+  display: inline;
+  overflow: hidden;
+  display: inline-block;
+  -webkit-transition: all 1s cubic-bezier(0.27, 0.51, 0.44, 0.99);
+  transition: all 1s cubic-bezier(0.27, 0.51, 0.44, 0.99);
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+#navbar ul li:hover {
+  -ms-flex-preferred-size: 120%;
+      flex-basis: 120%;
+  background: rgba(0, 0, 0, 0.233);
+}
+
+#navbar ul li a {
+  font-family: Lato, sans-serif;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 1em;
+  text-decoration: none;
+  color: #817f7f;
+  line-height: 70px;
+  -webkit-transition: color 1s cubic-bezier(0.27, 0.51, 0.44, 0.99);
+  transition: color 1s cubic-bezier(0.27, 0.51, 0.44, 0.99);
+  display: block;
+  text-align: center;
+}
+
+#navbar ul li a:hover {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
