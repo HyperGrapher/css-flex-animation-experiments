@@ -68,18 +68,15 @@ body {
 }
 
 #navbar ul li {
-  display: inline;
-  overflow: hidden;
-  display: inline-block;
   -webkit-transition: all 1s cubic-bezier(0.27, 0.51, 0.44, 0.99);
   transition: all 1s cubic-bezier(0.27, 0.51, 0.44, 0.99);
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  width: 33%;
+  background: #2e2e2e;
 }
 
 #navbar ul li:hover {
-  -ms-flex-preferred-size: 120%;
-      flex-basis: 120%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   background: rgba(0, 0, 0, 0.233);
 }
 
