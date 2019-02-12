@@ -1,4 +1,4 @@
-## Animated using flex-basis css property
+## Navbar item animation using flex-basis css property
 
 Navigation bar items are animated using flex-basis CSS property on mause hover.
 
