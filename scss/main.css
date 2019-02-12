@@ -74,7 +74,7 @@ body {
   background: #2e2e2e;
 }
 
-#navbar ul li:hover {
+#navbar ul li.active {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   background: rgba(0, 0, 0, 0.233);
@@ -92,6 +92,11 @@ body {
   transition: color 1s cubic-bezier(0.27, 0.51, 0.44, 0.99);
   display: block;
   text-align: center;
+}
+
+#navbar ul li a.active {
+  color: white;
+  font-size: 1.05em;
 }
 
 #navbar ul li a:hover {

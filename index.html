@@ -17,15 +17,28 @@
 <body>
     <nav id="navbar" class="">
         <ul>
-            <li><a  href="#">Management</a></li>
-            <li><a  href="#">Location</a></li>
-            <li><a  href="#">Study</a></li>
-            <li class="active" ><a  href="#">Collections</a></li>
-            <li><a  href="#">Credits</a></li>
+            <li class="active" ><a class="active" onclick="activate(this)" href="#">Collections</a></li>
+            <li><a  onclick="activate(this)" href="#">Management</a></li>
+            <li><a  onclick="activate(this)" href="#">Location</a></li>
+            <li><a  onclick="activate(this)" href="#">Study</a></li>
+            <li><a  onclick="activate(this)" href="#">Credits</a></li>
         </ul>
     </nav>
 
+<script>
 
+
+function activate(elem) {
+    var a = document.getElementsByTagName('a')
+    for (i = 0; i < a.length; i++) {
+        a[i].classList.remove('active')
+        a[i].parentNode.classList.remove('active')
+    }
+    elem.classList.add('active');
+    elem.parentNode.classList.add('active');
+}
+
+</script>
    
 </body>
 

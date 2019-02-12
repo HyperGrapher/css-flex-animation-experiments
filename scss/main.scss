@@ -33,11 +33,12 @@ body {
 		width: 33%;
 		background: rgb(46, 46, 46);
 
-		&:hover{
+		&.active{
 			flex-shrink: 0;
 			background: rgba(0, 0, 0, 0.233);
 
 		}
+		
 
 
 	}
@@ -56,9 +57,14 @@ body {
 		text-align: center;
 
 
+		&.active {
+			color: rgb(255, 255, 255);
+			font-size: 1.05em;
+		}
+
 		&:hover {
 			color: rgb(255, 255, 255);
-
+			
 		}
 	}
 }
