@@ -4,6 +4,8 @@ Navigation bar items are animated using flex-basis CSS property on mause hover.
 
 No JS is required. Only CSS is used.
 
+#### NOTE: Check branches for different implementaions.
+
 ### Using flex-basis
 
 [Youtube Vıdeo Link: ](https://youtu.be/061foQFLv8U)<br />
